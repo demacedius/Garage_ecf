@@ -17,7 +17,9 @@ MYSQL/MariaDb
 
 ```
 git clone https://github.com/demacedius/Garage_ecf.git
-npm install
 cd Garage_ecf
+npm install
 ```
+
+**__Une fois dans le projet vous devez dabord créer une base de donnée__**
 
