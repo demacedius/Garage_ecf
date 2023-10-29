@@ -1,0 +1,12 @@
+<nav class="flex justify-between py-[0.5rem] px-[1.5rem]">
+    <a href="/">home</a>
+    @if(auth.user)
+        <form action="{{ route('AuthController.logout') }}?_method=DELETE" method="POST">
+            {{ csrfField() }}
+            <button type="submit">Deconnexion {{auth.user.email}}</button>
+        </form>
+    @else
+        <a href="{{route('AuthController.ShowLoginForm')}}">login</a>
+        <a href="{{ route('AuthController.ShowRegisterForm')}}">inscription</a>
+    @end
+</nav>

@@ -1,0 +1,23 @@
+@layout('layout/app')
+@section('content')
+
+
+
+
+<form action="{{ route('AuthController.register')}}" method="POST" class="flex flex-col">
+    {{ csrfField() }}
+    <div>
+        <label for="email">Votre adress email</label>
+        <input type="email" name="email" class="border" id="email" class="border border-black">
+    </div>
+
+    <div>
+
+        <label for="password">Entrez votre mot de passe</label>
+        <input type="password" name="password" class="border border-black" id="password">
+    </div>
+    <button type="submit">inscription</button>
+</form>
+
+
+@endsection
