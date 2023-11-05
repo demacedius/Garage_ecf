@@ -9,9 +9,11 @@ MYSQL/MariaDb
 
 ## Technoloigie utilisé ##
 
-* AdonisJs
-* TailwindCss
 * Mysql/Mariadb
+* AdonisJs
+* alpinjs
+* TailwindCss
+* Unpoly
 
 # Installer le Projet #
 
